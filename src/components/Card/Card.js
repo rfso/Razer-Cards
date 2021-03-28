@@ -1,8 +1,11 @@
+import React from 'react'
+import data from '../../data'
 
-export default function Card() {
+export const Card = () => {
     return (
-        <div>
+        <>
             
-        </div>
+        </>
     )
 }
+
