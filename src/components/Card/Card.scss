@@ -1,0 +1,42 @@
+.container {
+    background-color: #000000; //incluir as variáveis de cor
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    .logo-image {
+        height: 15rem;
+        width: 10rem;
+        margin-bottom: 0.5rem;
+    }
+    .product-card {
+        background-color: #5BEA18;
+        height: 35rem;
+        width: 20rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .product-image {
+            position: relative;
+            bottom: 3.8rem;
+        }
+        .product-title {
+            font-size: 2rem;
+            color: #FFFFFF;
+            position: relative;
+            top: 13rem;
+            left: 2.5rem;
+            z-index: 2;
+        }
+        .product-card-info {
+            .product-info {
+                margin: 1rem;
+            }
+        }
+    }
+}

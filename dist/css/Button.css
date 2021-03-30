@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=Button.css.map */
+.card-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  width: 10rem;
+  height: 2.2rem;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: #383838;
+}
+/*# sourceMappingURL=Button.css.map */

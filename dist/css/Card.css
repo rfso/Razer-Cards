@@ -1,1 +1,64 @@
-/* No CSS *//*# sourceMappingURL=Card.css.map */
+.container {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container .logo-image {
+  height: 15rem;
+  width: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+.container .product-card {
+  background-color: #5BEA18;
+  height: 35rem;
+  width: 20rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .product-card .product-image {
+  position: relative;
+  bottom: 3.8rem;
+}
+
+.container .product-card .product-title {
+  font-size: 2rem;
+  color: #FFFFFF;
+  position: relative;
+  top: 13rem;
+  left: 2.5rem;
+  z-index: 2;
+}
+
+.container .product-card .product-card-info .product-info {
+  margin: 1rem;
+}
+/*# sourceMappingURL=Card.css.map */

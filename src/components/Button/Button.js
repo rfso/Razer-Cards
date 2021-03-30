@@ -1,9 +1,9 @@
-import React from 'react'
+import '../Button/Button.scss'
 
-export const Button = ({ text }) => {
+export const Button = () => {
     return (
         <>
-        <button>{text}</button>
+        <button className="card-btn">LEARN MORE</button>
         </>
     )
 }

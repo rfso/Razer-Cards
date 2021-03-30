@@ -1,4 +1,8 @@
+@import url(../../assets/utils/reset.css);
+@import url(//fonts.googleapis.com/earlyaccess/souliyo.css);
+@import-normalize;
 body {
   background-color: black;
+  font-family: 'Souliyo', sans-serif;
 }
 /*# sourceMappingURL=App.css.map */
