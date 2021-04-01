@@ -1,5 +1,4 @@
 .container {
-  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,22 +12,72 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  height: 100%;
+  overflow: hidden;
+  min-height: 0;
 }
 
-.container .logo-image {
-  height: 15rem;
-  width: 10rem;
-  margin-bottom: 0.5rem;
-}
-
-.container .product-card {
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #5BEA18;
-  height: 35rem;
-  width: 20rem;
   border-radius: 10px;
+  height: 90%;
+  overflow: hidden;
+  width: 90%;
+}
+
+.container .card__header {
+  background-color: #000000;
+  height: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+.container .card__header .card__image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.container .card__header .card__title {
+  position: absolute;
+  left: 11%;
+  top: 80%;
+  width: 80%;
+  text-align: center;
+  color: #FFFF;
+  font-size: 1.8rem;
+  text-shadow: 0px 4px 4px #000000;
+}
+
+.container .card__header .card__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  bottom: 10rem;
+  font-size: 2.6rem;
+}
+
+.container .card__header .card__icons .btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.container .card__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,29 +85,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 50%;
+  font-size: 1.1rem;
+  min-height: 0;
+}
+
+.container .card__description .card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 1.5rem;
 }
 
-.container .product-card .product-image {
-  position: relative;
-  bottom: 3.8rem;
-}
-
-.container .product-card .product-title {
-  font-size: 2rem;
-  color: #FFFFFF;
-  position: relative;
-  top: 13rem;
-  left: 2.5rem;
-  z-index: 2;
-}
-
-.container .product-card .product-card-info .product-info {
-  margin: 1rem;
+.container .card__description div > span {
+  margin: 1.3rem;
 }
 /*# sourceMappingURL=Card.css.map */

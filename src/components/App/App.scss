@@ -2,8 +2,30 @@
 @import url(../../assets/utils/reset.css);
 @import url(//fonts.googleapis.com/earlyaccess/souliyo.css);
 
+html {
+    font-size: 100%;
+}
+
 body {
     background-color: black;
     font-family: 'Souliyo', sans-serif;
+    font-size: 1.25rem;
+    overscroll-behavior: contain;
+    // position: fixed;
+    height: 100%;
+    width: 100%;
 }
 
+body > #root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 60%;
+    height: 25%;
+    margin-top: 1.5rem;
+}

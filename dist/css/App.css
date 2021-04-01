@@ -1,8 +1,39 @@
 @import url(../../assets/utils/reset.css);
 @import url(//fonts.googleapis.com/earlyaccess/souliyo.css);
 @import-normalize;
+html {
+  font-size: 100%;
+}
+
 body {
   background-color: black;
   font-family: 'Souliyo', sans-serif;
+  font-size: 1.25rem;
+  overscroll-behavior: contain;
+  height: 100%;
+  width: 100%;
+}
+
+body > #root {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  width: 60%;
+  height: 25%;
+  margin-top: 1.5rem;
 }
 /*# sourceMappingURL=App.css.map */
