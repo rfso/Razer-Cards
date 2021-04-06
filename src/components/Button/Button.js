@@ -1,4 +1,6 @@
 import '../Button/Button.scss'
+import '../../assets/utils/_include-media.scss';
+
 
 export const Button = ({ text }) => {
   return (

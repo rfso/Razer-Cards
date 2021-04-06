@@ -8,7 +8,7 @@ export const CardHeader = ({ productName, productImages }) => {
   const [imageIndex, setImageIndex] = useState(0)
 
   const checkIndex = (number) => {
-    if (number > productImages.length - 1) {
+    if (number > productImages.length -1 ) {
       return 0
     }
     if (number < 0) {
@@ -32,12 +32,13 @@ export const CardHeader = ({ productName, productImages }) => {
   }
 
   return (
-    <div className="card__header">
+    <header className="card__header">
       <img
         className="card__image"
         src={productImages[imageIndex]}
-        alt="Razer Viper Mini"
+        alt={productName}
       />
+      <span className="card__title">{productName}</span>
       <div className="card__icons">
         <button className="btn" onClick={prevPicture}>
           <Icon icon={formPrevious} style={{ color: '#fff' }} />
@@ -46,7 +47,6 @@ export const CardHeader = ({ productName, productImages }) => {
           <Icon icon={formNext} style={{ color: '#fff' }} />
         </button>
       </div>
-      <h2 className="card__title">{productName}</h2>
-    </div>
+    </header>
   )
 }

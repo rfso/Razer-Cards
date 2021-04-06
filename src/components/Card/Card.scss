@@ -1,41 +1,41 @@
+@import '../../assets/utils/_include-media.scss';
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
     overflow: hidden;
-    min-height: 0;
+    padding: 1rem;
+
     .card {
         display: flex;
         flex-direction: column;
         background-color: #5BEA18;
         border-radius: 10px;
-        height: 90%;
         overflow: hidden;
-        width: 90%;
 
         &__header {
-            background-color: #000000;
-            height: 50%;
+            max-height: 50%;
             position: relative;
-            display: inline-block;
-
+            background-color: transparent;
+            text-align: center;
+            
             .card__image {
-                height: 100%;
-                width: 100%;
                 object-fit: cover;
-                border-radius: 10px 10px 0px 0px;
+                width: 100%;
+                height: 100%;
             }
 
             .card__title {
                 position: absolute;
-                left: 11%;
-                top: 80%;
-                width: 80%;
-                text-align: center;
+                bottom: 0;
+                margin-right: auto;
+                margin-left: auto;
+                width: 100%;
+                transform: translate(-50%, 0);
+                font-size: clamp(1.75rem, 8vw, 2.5rem);
                 color: #FFFF;
-                font-size: 1.8rem;
                 text-shadow: 0px 4px 4px #000000;
             }
 
@@ -45,6 +45,9 @@
                 position: relative;
                 bottom: 10rem;
                 font-size: 2.6rem;
+                @include media('>=1200px') {
+                    bottom: 12.5rem;
+                }
                 
                 .btn {
                     border: none;
@@ -52,24 +55,43 @@
                     cursor: pointer;
                     outline: inherit;
                 }
+
+                .btn:hover {
+                    transform: scale(1.2, 1.2);
+                }
             }
         }
 
         &__description {
             display: flex;
             flex-direction: column;
-            height: 50%;
-            font-size: 1.1rem;
-            min-height: 0;
+            font-size: clamp(1rem, 5.2vw, 1.6rem);
+            @include media('>=1200px') {
+                height: 14rem;
+            }
 
             .card__text {
                 display: flex;
                 align-items: center;
                 margin-left: 1.5rem;
+                @include media('>361px', '<=phone') {
+                    margin-top: 0.45em;
+                }
+                @include media('>phone', '<=463px') {
+                    margin-top: 0.55em;
+                }
+                @include media('>463px', '<1200px') {
+                    margin-left: 1.8em;
+                    margin-top: 0.15em;
+                }
+                @include media('>=1200px') {
+                    margin-left: 2.2em;
+                    margin-top: 1rem;
+                }
             }
 
             div > span {
-                margin: 1.3rem;
+                margin: 1rem;
             }
         }
     }

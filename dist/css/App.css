@@ -1,21 +1,21 @@
-@import url(../../assets/utils/reset.css);
-@import url(//fonts.googleapis.com/earlyaccess/souliyo.css);
+@import url(/media/rfso/Novo volume/JS e etc/ReactJS/razer-card/src/assets/utils/reset.css);
 @import-normalize;
-html {
-  font-size: 100%;
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
   background-color: black;
-  font-family: 'Souliyo', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.25rem;
   overscroll-behavior: contain;
-  height: 100%;
-  width: 100%;
 }
 
 body > #root {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,9 +31,27 @@ body > #root {
           flex-direction: column;
 }
 
+@media (min-width: 1200px) {
+  body > #root {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .logo {
-  width: 60%;
-  height: 25%;
-  margin-top: 1.5rem;
+  height: 17%;
+  margin: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    height: 40%;
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

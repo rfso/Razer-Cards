@@ -5,14 +5,12 @@ import checkCircleOutlined from '@iconify/icons-ant-design/check-circle-outlined
 export const CardBody = ({ productInfo }) => {
   return (
     <div className="card__description">
-      {productInfo.map((product, index) => {
+      {productInfo.map((productText) => {
         return (
-          <>
-            <div className="card__text">
-              <Icon icon={checkCircleOutlined} style={{ fontSize: '2rem' }} />
-              <span>{product}</span>
-            </div>
-          </>
+          <div className="card__text" key={productText}>
+            <Icon icon={checkCircleOutlined} style={{ fontSize: '2rem' }} />
+            <span>{productText}</span>
+          </div>
         )
       })}
       <Button text={'LEARN MORE'} />
