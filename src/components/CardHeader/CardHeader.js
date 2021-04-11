@@ -8,7 +8,7 @@ export const CardHeader = ({ productName, productImages }) => {
   const [imageIndex, setImageIndex] = useState(0)
 
   const checkIndex = (number) => {
-    if (number > productImages.length -1 ) {
+    if (number > productImages.length - 1) {
       return 0
     }
     if (number < 0) {
@@ -38,7 +38,6 @@ export const CardHeader = ({ productName, productImages }) => {
         src={productImages[imageIndex]}
         alt={productName}
       />
-      <span className="card__title">{productName}</span>
       <div className="card__icons">
         <button className="btn" onClick={prevPicture}>
           <Icon icon={formPrevious} style={{ color: '#fff' }} />

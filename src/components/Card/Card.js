@@ -13,7 +13,7 @@ const Card = () => {
           return (
             <React.Fragment key={productInfo}>
               <CardHeader {...item} />
-              <CardBody productInfo={productInfo} />
+              <CardBody {...item} />
             </React.Fragment>
           )
         })}

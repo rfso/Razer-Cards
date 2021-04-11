@@ -7,24 +7,25 @@
   font-size: 1rem;
   width: 10rem;
   cursor: pointer;
-  padding: 0.4rem;
+  padding: .6rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  margin-top: 1rem;
+  margin: 2rem 0 1.5rem 0;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .card__button {
     margin-top: 2rem;
     width: 12rem;
+    font-size: 1.2rem;
   }
 }
 
 .card__button:hover {
-  background-color: #1c1d1c;
+  background-color: #292b29;
 }
 /*# sourceMappingURL=Button.css.map */

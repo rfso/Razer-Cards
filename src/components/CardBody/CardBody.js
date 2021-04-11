@@ -2,14 +2,17 @@ import { Button } from '../Button/Button'
 import { Icon } from '@iconify/react'
 import checkCircleOutlined from '@iconify/icons-ant-design/check-circle-outlined'
 
-export const CardBody = ({ productInfo }) => {
+export const CardBody = ({ productInfo, productName }) => {
   return (
     <div className="card__description">
-      {productInfo.map((productText) => {
+      <span className="card__title">{productName}</span>
+      {productInfo.map((productText, index) => {
         return (
           <div className="card__text" key={productText}>
             <Icon icon={checkCircleOutlined} style={{ fontSize: '2rem' }} />
+            <div className={`card_text_${index}`}>
             <span>{productText}</span>
+            </div>
           </div>
         )
       })}

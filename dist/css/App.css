@@ -1,4 +1,5 @@
 @import url(/media/rfso/Novo volume/JS e etc/ReactJS/razer-card/src/assets/utils/reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import-normalize;
 html,
 body,
@@ -10,9 +11,8 @@ body,
 
 body {
   background-color: black;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
-  overscroll-behavior: contain;
 }
 
 body > #root {
@@ -31,15 +31,15 @@ body > #root {
           flex-direction: column;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   body > #root {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -48,10 +48,10 @@ body > #root {
   margin: 2rem;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .logo {
     height: 40%;
-    width: 50%;
+    width: 44%;
   }
 }
 /*# sourceMappingURL=App.css.map */
