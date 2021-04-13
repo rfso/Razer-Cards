@@ -3,25 +3,27 @@
   color: #ffffff;
   border-style: none;
   border-radius: 10px;
+  position: relative;
+  bottom: -0.9em;
   text-transform: uppercase;
   font-size: 1rem;
   width: 10rem;
   cursor: pointer;
-  padding: .6rem;
+  padding: .5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  margin: 2rem 0 1.5rem 0;
+  margin: 1.5rem 0 2rem 0;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (min-width: 1024px) {
   .card__button {
-    margin-top: 2rem;
     width: 12rem;
     font-size: 1.2rem;
+    margin-top: 0.5rem;
   }
 }
 

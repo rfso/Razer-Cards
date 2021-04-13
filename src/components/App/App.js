@@ -4,10 +4,11 @@ import { ReactComponent as Logo } from '../../assets/imgs/razer-logo-svg-vector.
 
 const App = () => {
   return (
-    <>
+    <div className="wrapper">
+      <Card />
       <Logo className="logo" />
       <Card />
-    </>
+    </div>
   )
 }
 

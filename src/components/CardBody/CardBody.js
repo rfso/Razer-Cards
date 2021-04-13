@@ -10,13 +10,13 @@ export const CardBody = ({ productInfo, productName }) => {
         return (
           <div className="card__text" key={productText}>
             <Icon icon={checkCircleOutlined} style={{ fontSize: '2rem' }} />
-            <div className={`card_text_${index}`}>
-            <span>{productText}</span>
+            <div className={`card__text__${index}`}>
+              <span>{productText}</span>
             </div>
           </div>
         )
       })}
-      <Button text={'LEARN MORE'} />
+      <Button text={'learn more'} />
     </div>
   )
 }

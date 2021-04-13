@@ -1,18 +1,26 @@
 @import url(/media/rfso/Novo volume/JS e etc/ReactJS/razer-card/src/assets/utils/reset.css);
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import-normalize;
 html,
 body,
 #root {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  min-height: 100vh;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
   background-color: black;
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.25rem;
+  overflow-y: auto;
+  position: relative;
 }
 
 body > #root {
@@ -29,10 +37,29 @@ body > #root {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
-@media (min-width: 1024px) {
-  body > #root {
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1291px) {
+  .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -44,14 +71,7 @@ body > #root {
 }
 
 .logo {
-  height: 17%;
-  margin: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .logo {
-    height: 40%;
-    width: 44%;
-  }
+  min-height: 10rem;
+  margin: 1rem;
 }
 /*# sourceMappingURL=App.css.map */

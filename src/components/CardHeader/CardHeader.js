@@ -1,4 +1,3 @@
-//Title and image(s)
 import { useState } from 'react'
 import { Icon } from '@iconify/react'
 import formPrevious from '@iconify/icons-grommet-icons/form-previous'
@@ -7,14 +6,14 @@ import formNext from '@iconify/icons-grommet-icons/form-next'
 export const CardHeader = ({ productName, productImages }) => {
   const [imageIndex, setImageIndex] = useState(0)
 
-  const checkIndex = (number) => {
-    if (number > productImages.length - 1) {
+  const checkIndex = (index) => {
+    if (index > productImages.length - 1) {
       return 0
     }
-    if (number < 0) {
+    if (index < 0) {
       return productImages.length - 1
     }
-    return number
+    return index
   }
 
   const prevPicture = () => {

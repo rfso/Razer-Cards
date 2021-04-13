@@ -12,7 +12,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
   padding: 1rem;
 }
 
@@ -27,15 +26,14 @@
   background-color: #5BEA18;
   border-radius: 10px;
   overflow: hidden;
-  max-height: 750px;
+  max-height: 765px;
 }
 
 .container .card__header {
-  max-height: 50%;
+  height: 350px;
   position: relative;
-  background-color: transparent;
-  text-align: center;
   overflow: hidden;
+  background-color: black;
 }
 
 .container .card__header .card__image {
@@ -62,12 +60,13 @@
   background: none;
   cursor: pointer;
   outline: inherit;
+  font-size: clamp(3.6rem, 3.5vw, 4rem);
 }
 
-@media (min-width: 550px) {
+@media (min-width: 398px) {
   .container .card__header .card__icons .btn {
     position: relative;
-    font-size: 3.5rem;
+    bottom: 2rem;
   }
 }
 
@@ -84,9 +83,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
   max-height: 50%;
-  font-size: clamp(1rem, 5.2vw, 1.6rem);
+  font-size: clamp(1rem, 5.2vw, 1.8rem);
 }
 
 .container .card__description .card__title {
@@ -96,7 +94,7 @@
   margin-top: 0.5rem;
   font-size: clamp(1.75rem, 8vw, 2.5rem);
   color: #FFF;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .container .card__description .card__text {
@@ -107,6 +105,21 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 1.6rem 0 0 .9rem;
+  letter-spacing: 0.02rem;
+  text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 390px) {
+  .container .card__description .card__text {
+    margin-left: 1.8rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 454px) {
+  .container .card__description .card__text {
+    margin-left: 2.5rem;
+  }
 }
 
 .container .card__description div > span {

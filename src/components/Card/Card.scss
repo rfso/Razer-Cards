@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
+    // height: 100%;
     padding: 1rem;
 
     .card {
@@ -14,14 +14,13 @@
         background-color: #5BEA18;
         border-radius: 10px;
         overflow: hidden;
-        max-height: 750px;
+        max-height: 765px;
 
         &__header {
-            max-height: 50%;
+            height: 350px;
             position: relative;
-            background-color: transparent;
-            text-align: center;
             overflow: hidden;
+            background-color: rgb(0, 0, 0);
             
             .card__image {
                 object-fit: cover;
@@ -40,9 +39,10 @@
                     background: none;
                     cursor: pointer;
                     outline: inherit;
-                    @include media('>=550px') {
+                    font-size: clamp(3.6rem, 3.5vw, 4rem);
+                    @include media('>=398px') {
                         position: relative;
-                        font-size: 3.5rem;
+                        bottom: 2rem;
                     }
                 }
 
@@ -55,23 +55,31 @@
         &__description {
             display: flex;
             flex-direction: column;
-            position: relative;
             max-height: 50%;
-            font-size: clamp(1rem, 5.2vw, 1.6rem);
+            font-size: clamp(1rem, 5.2vw, 1.8rem);
 
             .card__title {
-                // position: absolute;
                 align-self: center;
                 margin-top: 0.5rem;
                 font-size: clamp(1.75rem, 8vw, 2.5rem);
                 color: #FFF;
-                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+                text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
             }
 
             .card__text {
                 display: flex;
                 align-items: center;
                 margin: 1.6rem 0 0 .9rem;
+                letter-spacing: 0.02rem;
+                text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+                @include media ('>=390px') {
+                    margin-left: 1.8rem;
+                    margin-top: 2rem
+                }
+                @include media ('>=454px') {
+                    margin-left: 2.5rem;
+                    // margin-top: 2rem;
+                }
             }
 
             div > span {
