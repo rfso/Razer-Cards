@@ -12,7 +12,7 @@ These are just 02 simple product cards, that I made to practice some react/sass 
 
 Project was built with:
 
-* Figma: [Razer Cards] (https://www.figma.com/file/Kqnt8hRcS3SatuXApiRQfl/Razer-Card?node-id=0%3A1);
+* Figma: (https://www.figma.com/file/Kqnt8hRcS3SatuXApiRQfl/Razer-Card?node-id=0%3A1);
 * JavaScript (React);
 * Sass/scss;
 
