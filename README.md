@@ -22,7 +22,7 @@ To run this project, install it locally using npm:
 
 ```
 $ git clone https://github.com/rfso/Razer-Cards.git
-$ cd ../razer-card
+$ cd ../Razer-Cards
 $ npm install
 $ npm start
 ```
