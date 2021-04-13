@@ -2,8 +2,7 @@
 
 ## 🔍 Full Access
 
-* [Razer Cards]()
-
+* [Razer Cards](https://razer-cards.vercel.app/)
 
 ## 📌 General info
 
