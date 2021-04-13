@@ -10,10 +10,11 @@ These are just 02 simple product cards, that I made to practice some react/sass 
 	
 ## 💻 Technologies
 
-Project is created with:
+Project was built with:
 
+* Figma: [Razer Cards] (https://www.figma.com/file/Kqnt8hRcS3SatuXApiRQfl/Razer-Card?node-id=0%3A1);
 * JavaScript (React);
-* Sass/scss.
+* Sass/scss;
 
 	
 ## :gear: Setup
