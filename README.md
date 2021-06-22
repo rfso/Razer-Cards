@@ -1,29 +1,29 @@
-# :green_heart: Razer Cards
+# Razer Cards
 
-## 🔍 Full Access
+## Full Access
 
 * [Razer Cards](https://razer-cards.vercel.app/)
 
-## 📌 General info
+## General info
 
 These are just 02 simple product cards, that I made to practice some react/sass concepts.
 	
-## 💻 Technologies
+## Technologies
 
-Project was built with:
+This project was built with:
 
-* Figma: (https://www.figma.com/file/Kqnt8hRcS3SatuXApiRQfl/Razer-Card?node-id=0%3A1);
+* Figma: [Design Prototype](https://www.figma.com/file/Kqnt8hRcS3SatuXApiRQfl/Razer-Card?node-id=0%3A1);
 * JavaScript (React);
-* Sass/scss;
+* Sass/scss.
 
 	
-## :gear: Setup
+## Setup
 
 To run this project, install it locally using npm:
 
 ```
 $ git clone https://github.com/rfso/Razer-Cards.git
 $ cd ../Razer-Cards
-$ npm install
-$ npm start
+$ yarn
+$ yarn start
 ```
