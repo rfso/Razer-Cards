@@ -19,7 +19,7 @@ This project was built with:
 	
 ## Setup
 
-To run this project, install it locally using npm:
+To run this project, install it locally using yarn:
 
 ```
 $ git clone https://github.com/rfso/Razer-Cards.git
