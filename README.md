@@ -23,7 +23,7 @@ To run this project, install it locally using yarn:
 
 ```
 $ git clone https://github.com/rfso/Razer-Cards.git
-$ cd ../Razer-Cards
+$ cd Razer-Cards
 $ yarn
 $ yarn start
 ```
